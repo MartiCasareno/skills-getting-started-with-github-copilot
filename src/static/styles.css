@@ -74,6 +74,52 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #222;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Empty state should remain simple */
+.participant-item.empty {
+  color: #777;
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
